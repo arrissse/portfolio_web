@@ -1,0 +1,65 @@
+.Works {
+  position: relative;
+
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1vh;
+
+  //TODO: убрать копипасту title и button в about_me и works
+  .title {
+    display: block;
+
+    margin-top: 10vh;
+
+    background-color: black;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    .work_types {
+      display: flex;
+      flex-direction: row;
+      gap: 10vw;
+
+      height: 80%;
+    }
+
+    .choose_button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10%;
+
+      height: 100%;
+      aspect-ratio: 1.1/1;
+
+      border: 4px dashed white;
+      background-color: black;
+
+      img {
+        max-width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    //TODO: сделать так, чтобы не было смещения объектов при наведении
+    .choose_button:hover {
+      height: 98%;
+      border-color: #e52525;
+    }
+  }
+
+  .type {
+    color: white;
+  }
+}

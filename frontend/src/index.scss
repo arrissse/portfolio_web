@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PixeliProsto";
+  src: url("./assets/fonts/piksieliprstfixbychzshrft.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("./assets/fonts/F77 Minecraft.ttf") format("truetype");
+}
+
+* {
+  @apply text-white font-custom_reg;
+  font-size: 40px;
+}
+
+body {
+  @apply bg-black;
+}
+
+h1,
+h3 {
+  @apply text-my-red;
+}
+
+h1,
+h2 {
+  font-size: 96px;
+  @apply font-custom;
+}
+
+h3,
+h4 {
+  font-size: 40px;
+}
+
+a:hover {
+  @apply bg-my-red;
+}

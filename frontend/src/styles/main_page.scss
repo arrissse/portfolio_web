@@ -1,0 +1,70 @@
+.Home {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.load_block {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rect_load {
+  margin-top: 10px;
+  border: 4px solid white;
+  width: 150%;
+  height: 45px;
+}
+
+.fill {
+  height: 100%;
+  background: white;
+  width: 0%;
+  animation: fillAnim 3s ease-in-out forwards;
+}
+
+@keyframes fillAnim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.hide_animation {
+  animation: hide_animation 0.5s forwards;
+}
+
+.show_nav {
+  animation: show_nav 0.5s forwards;
+}
+
+@keyframes hide_animation {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
+
+@keyframes show_nav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
